@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bitácora de Vehículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+            .logo h4 {
+                margin: 0;
+            }
+
+        .address {
+            text-align: center;
+        }
+
+        .border {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #D8D8D8;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h4>BITÁCORA DE VEHÍCULO</h4>
+            <p>Colonia Miramonte Calle Atitlán No. 2938, San Salvador</p>
+            <p>administracion@agrobiotek.com</p>
+            <p>Teléfono: 2260-7669</p>
+        </div>
+        <div class="admin-section">
+            <table class="border">
+                <tr>
+                    <th>Registro administrativo</th>
+                </tr>
+                <tr>
+                    <td>Version 1.0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="section-title">
+        Información del Vehículo
+    </div>
+    <table class="border">
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Dependencia</th>
+                <th>Jefe Inmediato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@depVentas</td>
+                <td>@dep</td>
+                <td>@jefeInmediato</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="section-title">
+        Detalles del Vehículo
+    </div>
+    <table class="border">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Tipo</th>
+                <th>Modelo</th>
+                <th>Placa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@marca</td>
+                <td>@tipo</td>
+                <td>@modelo</td>
+                <td>@placa</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="section-title">
+        Registro de Actividades
+    </div>
+    <table class="border">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Fecha</th>
+                <th>Km Inicial</th>
+                <th>Km Final</th>
+                <th>Km Recorrido</th>
+                <th>Destino</th>
+                <th>Actividad</th>
+                <th>Nombre Conductor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@hora</td>
+                <td>@fecha</td>
+                <td>@kmInicial</td>
+                <td>@kmFinal</td>
+                <td>@kmRecorrido</td>
+                <td>@destino</td>
+                <td>@actividad</td>
+                <td>@nombre</td>
+            </tr>
+            <tr>
+                <td>@hora2</td>
+                <td>@fecha2</td>
+                <td>@kmInicial2</td>
+                <td>@kmFinal2</td>
+                <td>@kmRecorrido2</td>
+                <td>@destino2</td>
+                <td>@actividad2</td>
+                <td>@nombre2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
